@@ -5,6 +5,6 @@ def sentiment_analyzer(text_to_analyze):
     myobj = { "raw_document": { "text": text_to_analyze } }
     response = requests.post(url, json = myobj, headers=headers)
     f_res = json.loads(response.text)
-    score = f_res["documentSentimet"]["score"]
+    score = f_res["documentSentiment"]["score"]
     label = f_res["documentSentiment"]["label"]
     return {"score" : {{score}}, "label" : {{label}}}
