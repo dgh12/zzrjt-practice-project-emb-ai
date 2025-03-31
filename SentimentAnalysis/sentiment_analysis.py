@@ -7,4 +7,4 @@ def sentiment_analyzer(text_to_analyze):
     f_res = json.loads(response.text)
     score = f_res["documentSentiment"]["score"]
     label = f_res["documentSentiment"]["label"]
-    return {"score" : {{score}}, "label" : {{label}}}
+    return {"score" : {score}, "label" : {label}}
