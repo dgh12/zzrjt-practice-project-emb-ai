@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .center-heading {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class = "card-body">
+            <h1 class="center-heading">Result</h1> 
+            <div class="d-flex justify-content-center">
+                <h2 class="Balance">{{data1}}</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h2 class="Balance">{{data2}}</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-info" href="{{ url_for('render_index_page') }}">Go Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
